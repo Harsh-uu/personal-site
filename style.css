@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -42,7 +45,7 @@ nav ul li{
 }
 
 .lol{
-    padding: 0 0 0 65vw;
+    padding: 0 0 0 67vw;
 }
 
 nav ul li a{
@@ -57,21 +60,39 @@ nav ul li a{
     margin: auto;
 }
 
-.about h2{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: xx-large;
+.about h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    letter-spacing: 5px;
+    color: rgb(252, 6, 55);
+    width: 85vw;
+}
+.about h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 6px;
+    width: 85vw;
 }
 
 .about p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    /* border: 2px solid red; */
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 2;
 }
 
-.about h2, .about p{
+.about h1, .about h3, .about p{
     display: flex;
     justify-content: center;
-    width: 85vw;
     /* border: 2px solid red; */
     margin: auto;
+}
+
+.rotate{
+    transform: rotate(0.25turn);
 }
    
