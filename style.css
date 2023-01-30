@@ -71,6 +71,7 @@ nav ul li a{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     letter-spacing: 6px;
+    text-align: center;
     width: 85vw;
 }
 
@@ -91,8 +92,3 @@ nav ul li a{
     /* border: 2px solid red; */
     margin: auto;
 }
-
-.rotate{
-    transform: rotate(0.25turn);
-}
-   
