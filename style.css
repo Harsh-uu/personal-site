@@ -6,8 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
 
 *{
+    /* outline: 2px solid red; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: black;
@@ -16,21 +18,22 @@ body{
 
 header{
     font-family: "Lato", sans-serif;
+    padding-inline: 2rem;
 }
 
 nav{
     display: flex;
+    justify-content: space-between;
     padding: 10px 0;
-}
-
-.logo{
-    display: flex;
     align-items: center;
 }
 
+.logo{
+    margin: auto;
+}
 .logo img{
     width: 120px;
-    padding: 0 40px;
+    /* padding: 0 40px; */
 }
 
 nav ul{
@@ -43,7 +46,9 @@ nav ul li{
     list-style: none;
     padding: 0 23px;
 }
-
+.navList{
+    display: none;
+}
 .lol{
     padding: 0 0 0 67vw;
 }
@@ -76,20 +81,30 @@ nav ul li a{
 }
 
 .about p{
-    font-family: 'Barlow Condensed', sans-serif;
+    /* font-family: 'Barlow Condensed', sans-serif; */
     font-size: 20px;
-    /* border: 2px solid red; */
-    width: 50vw;
+    max-width:1024px;
+    padding-inline: 10%;
     height: 40vh;
     text-align: center;
     letter-spacing: 4px;
     line-height: 2;
 }
-
+.mainHeading{
+    text-align: center;
+}
 .about h1, .about h3, .about p{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     /* border: 2px solid red; */
     margin: auto;
 }
-   
+  
+@media(width>768px){
+    .navList{
+        display: flex;
+    }
+    .logo{
+        margin:unset ;
+    }
+}
